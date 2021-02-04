@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+/* nav bar */
+.navbar{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+}
+.nav-text h1{
+font-size: 2rem;
+position: fixed;
+top: 9px;
+left: 9px;
+text-decoration: none;
+}
+.nav-text h1 a {
+    text-decoration: none;;
+}
+.ham{
+    position: fixed;
+    top: 9px;
+    right: 6px;
+    background: transparent;
+    border: transparent;
+}
+.ham:hover{
+    background: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+.nav-text button i{
+    font-size: 35px;
+    padding: 0.25rem;
+}
+.hide{
+    display: none !important;
+}
+.nav-clp{
+    position: fixed;
+    top: 9px;
+    right: 6px;
+    font-size: 35px;
+    width: 40px;
+    background: transparent;
+    border: none;
+}
+.nav-collaps{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display:none;
+    z-index: 999;
+}
+.shownav{
+    display: flex !important;
+}
+.nav-collaps ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+.nav-collaps ul li{
+    font-size: 1.7rem;
+    text-decoration: none;
+    margin: 20px;
+}
+.nav-collaps li a{
+    text-decoration: none;
+}
+.showcase-wrap{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.screen-content{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    transition: all 0.5s ease;
+
+}
+.content{
+ min-width: 100%;
+ height: 100vh;
+ color:#fff;
+ display: grid;
+ place-content: center;
+ text-align: center;
+ z-index: -1;
+}
+.content h1{
+    font-size: 1.7rem;
+    width: 90%;
+    margin: 1.4rem auto;
+}
+.content button{
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: inherit;
+    padding: 17px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: 12px;
+    margin: 4px auto;
+}
+
+.btn{
+    font-size: 20px;
+    padding: 10px;
+    background: transparent;
+    width: 40%;
+    border: 2px solid white;
+}
+.dotted-btn{
+    display: flex;
+    position: fixed;
+    bottom: 18px;
+    width: 100%;
+    justify-content: center;  
+}
+.dotted-btn i{
+    color: blanchedalmond;
+    margin: 2px 6px;
+    cursor: pointer;
+}
+.content:nth-child(1){
+    background: rgba(0, 0, 0, 0.7)url(./bg-1.jpg) center no-repeat;
+    background-size: cover;
+}
+.content:nth-child(2){
+    background: rgba(0, 0, 0, 0.7)url(./bg-2.jpg)center no-repeat;
+    background-size: cover;
+}
+.content:nth-child(3){
+    background: rgba(0, 0, 0, 0.7)url(./bg-3.jpg) center no-repeat;
+    background-size: cover;
+}
